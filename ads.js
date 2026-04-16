@@ -11,7 +11,7 @@
 
 const VIDEO_AD = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
 
-let clicked = false;
+let clicked = true;
 
 document.addEventListener("DOMContentLoaded", function(){
 
