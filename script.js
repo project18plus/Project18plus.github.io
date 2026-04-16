@@ -1,52 +1,19 @@
-body{
-margin:0;
-font-family:Inter;
-background:#ffffff;
+const video = document.getElementById("video");
+const meta = document.querySelector(".meta");
+
+function format(t){
+let m = Math.floor(t/60);
+let s = Math.floor(t%60);
+
+if(s < 10) s = "0"+s;
+
+return m+":"+s;
 }
 
-.appbar{
-position:sticky;
-top:0;
-background:white;
-padding:15px;
-border-bottom:1px solid #eee;
-}
+video.addEventListener("loadedmetadata", function(){
+meta.innerHTML = "0:00 / " + format(video.duration);
+});
 
-.brand{
-font-weight:400;
-display:flex;
-gap:10px;
-align-items:center;
-}
-
-.logo{
-background:white;
-color:black;
-padding:5px 10px;
-border-radius:6px;
-}
-
-.wrap{
-padding:20px;
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.phone{
-width:350px;
-background:white;
-border-radius:20px;
-overflow:hidden;
-}
-
-video{
-width:100%;
-display:block;
-}
-
-.meta{
-margin-top:15px;
-color:#666;
-font-size:14px;
-}
+video.addEventListener("timeupdate", function(){
+meta.innerHTML = format(video.currentTime) + " / " + format(video.duration);
+});
