@@ -161,3 +161,32 @@ document.body.appendChild(banner);
 document.getElementById("close-banner").onclick = function(){
 document.getElementById("floating-banner").style.display = "none";
 };
+
+
+/* =========================================
+   9.          IKLAN Scroll
+          iklan saat user scroll
+========================================= */
+
+const AD_URL = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
+
+let ready = false;
+let shown = false;
+
+// aktif setelah user scroll
+window.addEventListener("scroll", function(){
+  const scrollTop = window.scrollY;
+  if(scrollTop > 300){
+    ready = true;
+  }
+});
+
+// trigger saat klik berikutnya
+document.addEventListener("click", function(){
+
+  if(ready && !shown){
+    shown = true;
+    window.open(AD_URL, '_blank');
+  }
+
+});
