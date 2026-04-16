@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(){
 ========================================= */
 
 const POPUP_AD = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
-const POPUP_DELAY = 15000;
+const POPUP_DELAY = 10000;
 
 setTimeout(function(){
 window.open(POPUP_AD,'_blank');
