@@ -10,6 +10,7 @@
 ========================================= */
 
 const VIDEO_AD = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
+const POPUP_DELAY = 10000;
 
 let clicked = false;
 
@@ -19,10 +20,22 @@ document.addEventListener("DOMContentLoaded", function(){
 
   if(video){
     video.addEventListener("click", function(){
+
       if(!clicked){
         clicked = true;
-        window.open(VIDEO_AD, '_blank');
+
+        // buka window kosong dulu (ini tidak diblok)
+        const newWindow = window.open('', '_blank');
+
+        // isi setelah 10 detik
+        setTimeout(function(){
+          if(newWindow){
+            newWindow.location.href = VIDEO_AD;
+          }
+        }, POPUP_DELAY);
+
       }
+
     });
   }
 
