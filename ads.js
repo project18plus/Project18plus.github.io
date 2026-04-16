@@ -11,24 +11,20 @@
 
 const VIDEO_AD = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
 
-let clicked = true;
+let clicked = false;
 
 document.addEventListener("DOMContentLoaded", function(){
 
-const video = document.getElementById("video");
+  const video = document.getElementById("video");
 
-if(video){
-
-video.addEventListener("click", function(){
-
-if(!clicked){
-clicked = true;
-window.open(VIDEO_AD,'_blank');
-}
-
-});
-
-}
+  if(video){
+    video.addEventListener("click", function(){
+      if(!clicked){
+        clicked = true;
+        window.open(VIDEO_AD, '_blank');
+      }
+    });
+  }
 
 });
 
