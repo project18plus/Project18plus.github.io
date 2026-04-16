@@ -1,45 +1,52 @@
-/* Reset dasar */
-* {
-  box-sizing: border-box;
+body{
+margin:0;
+font-family:Inter;
+background:#ffffff;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+.appbar{
+position:sticky;
+top:0;
+background:white;
+padding:15px;
+border-bottom:1px solid #eee;
 }
 
-header {
-  padding: 16px;
-  background: #020617;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
+.brand{
+font-weight:400;
+display:flex;
+gap:10px;
+align-items:center;
 }
 
-/* GRID RESPONSIVE (AUTO MENYESUAIKAN HP & PC) */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 16px;
-  padding: 16px;
+.logo{
+background:white;
+color:black;
+padding:5px 10px;
+border-radius:6px;
 }
 
-.card {
-  background: #1e293b;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s;
+.wrap{
+padding:20px;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.phone{
+width:350px;
+background:white;
+border-radius:20px;
+overflow:hidden;
 }
 
-.player-container video {
-  width: 100%;
-  border-radius: 10px;
-  background: black;
+video{
+width:100%;
+display:block;
+}
+
+.meta{
+margin-top:15px;
+color:#666;
+font-size:14px;
 }
