@@ -1,0 +1,45 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  padding: 16px;
+  background: #020617;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* GRID RESPONSIVE (AUTO MENYESUAIKAN HP & PC) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.player-container video {
+  width: 100%;
+  border-radius: 10px;
+  background: black;
+}
