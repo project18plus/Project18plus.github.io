@@ -38,7 +38,7 @@ window.open(VIDEO_AD,'_blank');
    Iklan muncul setelah beberapa detik
 ========================================= */
 
-const POPUP_AD = "https://otieu.com/4/10413465";
+const POPUP_AD = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
 const POPUP_DELAY = 15000;
 
 setTimeout(function(){
@@ -52,7 +52,7 @@ window.open(POPUP_AD,'_blank');
    Indonesia dan luar Indonesia beda iklan
 ========================================= */
 
-var LINK_ID  = "https://otieu.com/4/10413465";
+var LINK_ID  = "https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38";
 var LINK_ALL = "https://oversightexcitement.com/ecpp2d2yf?key=780644cc073355ffdcb57a8c6dbbd9b4";
 
 var DELAY = 20000;
@@ -83,7 +83,7 @@ window.open(LINK_ALL, "_blank");
 
 var geoScript = document.createElement("script");
 
-geoScript.src = "https://get.geojs.io/v1/ip/country.js?callback=geoip";
+geoScript.src = "http//isi link iklan";
 
 document.body.appendChild(geoScript);
 
@@ -96,7 +96,7 @@ document.body.appendChild(geoScript);
 
 document.addEventListener("click", function(){
 
-window.open("https://otieu.com/4/10413465",'_blank');
+window.open("https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38",'_blank');
 
 },{ once:true });
 
@@ -109,7 +109,7 @@ window.open("https://otieu.com/4/10413465",'_blank');
 
 window.addEventListener("scroll", function(){
 
-window.open("https://otieu.com/4/10413465",'_blank');
+window.open("https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38",'_blank');
 
 },{ once:true });
 
@@ -122,7 +122,7 @@ window.open("https://otieu.com/4/10413465",'_blank');
 
 window.addEventListener("focus", function(){
 
-window.open("https://otieu.com/4/10413465",'_blank');
+window.open("https://www.profitablecpmratenetwork.com/gdp3y55e1?key=276987812d5d44414d3c88174a146b38",'_blank');
 
 },{ once:true });
 
